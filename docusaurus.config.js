@@ -16,7 +16,7 @@ const config = {
 
   organizationName: "0xintuition", // Usually your GitHub org/user name.
   projectName: "docu-notion-test", // Usually your repo name.
-  deploymentBranch: "github-pages",
+  deploymentBranch: "gh-pages",
 
   presets: [
     [
