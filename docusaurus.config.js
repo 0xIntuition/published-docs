@@ -9,14 +9,14 @@ const config = {
   title: "docu-notion test",
   tagline: "",
   url: "https://0xintuition.github.io",
-  baseUrl: "/docu-notion-test/",
+  baseUrl: "/published-docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   organizationName: "0xintuition", // Usually your GitHub org/user name.
   projectName: "docu-notion-test", // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "main",
 
   presets: [
     [
