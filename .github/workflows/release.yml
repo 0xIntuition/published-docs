@@ -40,3 +40,6 @@ jobs:
         with:
           github_token: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
           publish_dir: ./build
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+            
