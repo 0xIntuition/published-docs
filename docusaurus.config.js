@@ -96,11 +96,15 @@ const config = {
           },
         ],
       },
-
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
+      // prism: {
+      //  theme: lightCodeTheme,
+      //  darkTheme: darkCodeTheme,
+      // },
     }),
 };
 
