@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/published-docs/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/intuition-logo-white.ico",
 
   organizationName: "0xintuition", // Usually your GitHub org/user name.
   projectName: "published-docs", // Usually your repo name.
@@ -73,7 +73,7 @@ const config = {
       metadata: [
         {
           name: "keywords",
-          content: "Bloom, SIL, documentation, help, training",
+          content: "knowledge graph, trust, documentation, Web3 security, developer docs",
         },
       ],
       sitemap: {
@@ -86,7 +86,7 @@ const config = {
         title: "Intuition Documentation",
         logo: {
           alt: "Logo",
-          src: "img/logo.svg",
+          src: "img/intuition-logo-white.svg",
         },
 
         items: [
