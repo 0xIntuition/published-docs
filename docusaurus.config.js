@@ -83,7 +83,7 @@ const config = {
         ignorePatterns: [],
       },
       navbar: {
-        title: "Sample Docusaurus Site using docu-notion",
+        title: "Intuition Documentation",
         logo: {
           alt: "Logo",
           src: "img/logo.svg",
