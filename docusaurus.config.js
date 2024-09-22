@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Intuition Docs",
+  title: "docu-notion-sample-site",
   tagline: "",
   url: "https://0xintuition.github.io",
   baseUrl: "/published-docs/",
