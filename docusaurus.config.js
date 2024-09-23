@@ -88,12 +88,7 @@ const config = {
           alt: "Logo",
           src: "img/intuition-logo-white.svg",
         },
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
-       },
-       items: [
+         items: [
           {
             type: "localeDropdown",
             position: "right",
