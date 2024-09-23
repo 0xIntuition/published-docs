@@ -57,4 +57,10 @@ See the use in the docu-notion-sample-site: https://github.com/sillsdev/docu-not
 .notion-spacer:last-child {
   display: none;
 }
+
+/* New dark mode styles for darker black backgrounds */
+[data-theme='dark'] {  
+  --ifm-background-color: #121212; /* Darker black for main background */
+  --ifm-background-surface-color: #000000; /* Black for card surfaces, dialogs, etc. */
+}
 /* End copied from NotionX */
