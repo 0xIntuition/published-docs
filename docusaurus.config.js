@@ -70,6 +70,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        disableSwitch: true,
+        defaultMode: 'dark',
+        respectPrefersColorScheme: false
+      },
       metadata: [
         {
           name: "keywords",
