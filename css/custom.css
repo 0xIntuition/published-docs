@@ -14,8 +14,8 @@
     --ifm-contrast-background-dark-value:                                   70%;
     --ifm-contrast-foreground-dark-value:                                   90%;
 
-    --ifm-color-primary:                                                #3578e5;
-    --ifm-color-secondary:                                              #ebedf0;
+    --ifm-color-primary:                                                #000000;
+    --ifm-color-secondary:                                              #1C1C1C;
     --ifm-color-success:                                                #00a400;
     --ifm-color-info:                                                   #54c7ec;
     --ifm-color-warning:                                                #ffba00;
@@ -48,10 +48,37 @@
     --ifm-global-shadow-lw:                          0 1px 2px 0 rgba(0,0,0,.1);
     --ifm-global-shadow-md:                           0 5px 40px rgba(0,0,0,.2);
     --ifm-global-shadow-tl:    28px 0 rgba(0,0,0,.2),0 2px 4px 0 rgba(0,0,0,.1);
+
+  --ifm-heading-color: inherit;
+  --ifm-heading-margin-top: 0;
+  --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-heading-font-weight: var(--ifm-font-weight-bold);
+  --ifm-heading-line-height: 1.25;
+
+  --ifm-h1-font-size: 1.5rem;
+  --ifm-h2-font-size: 1.25rem;
+  --ifm-h3-font-size: 1.rem;
+  --ifm-h4-font-size: 1rem;
+  --ifm-h5-font-size: 0.875rem;
+  --ifm-h6-font-size: 0.85rem;
 }
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ifm-heading-color);
+  font-family: var(--ifm-heading-font-family);
+  font-weight: var(--ifm-heading-font-weight);
+  line-height: var(--ifm-heading-line-height);
+  margin: var(--ifm-heading-margin-top) 0 var(--ifm-heading-margin-bottom) 0;
+}
+
+@for $size from 1 to 6 {
+  h$(size) {
+    font-size: var(--ifm-h$(size)-font-size);
+  }
 }
