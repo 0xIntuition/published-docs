@@ -31,6 +31,7 @@ const config = {
         theme: {
           customCss: [
             require.resolve("./css/docu-notion-styles.css"),
+            require.resolve("./css/custom.css"),
             require.resolve(
               "./css/gifplayer.css"
               //"./node_modules/react-gif-player/dist/gifplayer.css" // this gave a big red compile warning which is seaming unrelated "  Replace Autoprefixer browsers option to Browserslist config..."
@@ -54,7 +55,6 @@ const config = {
   },
   themes: [
     [
-      require.resolve("./css/custom.css"),
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         // ... Your options.
