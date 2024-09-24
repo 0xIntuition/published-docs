@@ -45,7 +45,3 @@ html[data-theme='dark'] {
   --ifm-toc-link-color: var(--color-white);
   --ifm-tabs-color: var(--color-white);
 }
-/*[data-theme='dark'] {  */
-/*  --ifm-background-color: #121212; /* Darker black for main background */
-/*  --ifm-background-surface-color: #000000; /* Black for card surfaces, dialogs, etc. */*/
-/*} */
