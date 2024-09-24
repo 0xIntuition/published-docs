@@ -3,16 +3,6 @@
 
 :root {
     --ifm-color-scheme:                                                    dark;
-    --ifm-dark-value:                                                       10%;
-    --ifm-darker-value:                                                     15%;
-    --ifm-darkest-value:                                                    30%;
-    --ifm-light-value:                                                      15%;
-    --ifm-lighter-value:                                                    30%;
-    --ifm-lightest-value:                                                   50%;
-    --ifm-contrast-background-value:                                        90%;
-    --ifm-contrast-foreground-value:                                        70%;
-    --ifm-contrast-background-dark-value:                                   70%;
-    --ifm-contrast-foreground-dark-value:                                   90%;
 
     --ifm-color-primary:                                                #000000;
     --ifm-color-secondary:                                              #1C1C1C;
@@ -31,11 +21,11 @@
     --ifm-font-color-secondary:              var(--ifm-color-content-secondary);
     --ifm-font-family-base:                                 "Inter", sans-serif;
     --ifm-font-family-monospace:                                          "...";
-    --ifm-font-size-base:                                                   90%;
+    --ifm-font-size-base:                                                   100%;
     --ifm-font-weight-light:                                                200;
-    --ifm-font-weight-normal:                                               300;
-    --ifm-font-weight-semibold:                                             400;
-    --ifm-font-weight-bold:                                                 500;
+    --ifm-font-weight-normal:                                               400;
+    --ifm-font-weight-semibold:                                             500;
+    --ifm-font-weight-bold:                                                 600;
     --ifm-font-weight-base:                       var(--ifm-font-weight-normal);
     --ifm-line-height-base:                                                1.65;
 
@@ -81,4 +71,18 @@ h6 {
   h$(size) {
     font-size: var(--ifm-h$(size)-font-size);
   }
+}
+article {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@each $color in (primary, secondary, success, info, warning, danger) {
+  .text--$(color) {
+    color: var(--ifm-color-$(color));
+  }
+}
+html[data-theme='dark'] {
+  --ifm-background-color: #0E0E0E;
+  --ifm-background-surface-color: #000000;
 }
