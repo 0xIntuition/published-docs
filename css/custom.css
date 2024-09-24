@@ -12,8 +12,8 @@
   --ifm-color-emphasis-800: var(--ifm-color-gray-200);
   --ifm-color-emphasis-900: var(--ifm-color-gray-100);
 
-  --ifm-background-color: #121212;
-  --ifm-background-surface-color: #1e2125;
+  --ifm-background-color: #070505;
+  --ifm-background-surface-color: #0B0B0B;
 
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
 
@@ -43,9 +43,9 @@ html[data-theme='dark'] {
   --ifm-color-emphasis-900: var(--ifm-color-gray-100);
   --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
 
-  --ifm-background-color: #1b1b1d;
-  --ifm-background-surface-color: #242526;
-
+  --ifm-background-color: #070505;
+  --ifm-background-surface-color: #0B0B0B;
+  
   --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
 
   --ifm-color-content: #e3e3e3;
