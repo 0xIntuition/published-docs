@@ -1,47 +1,76 @@
 /* Dark mode background color overrides */
 :root {
-  --color-primary: #1C75DB;
-  --color-secondary: #ED297A;
-  --color-white: #FFF;
-  --color-secondary-white: #D1D5DB;
-  --color-black: #000;
-  --color-green: #31D76C;
-  --color-red: #FA4045;
-  --color-blue: #00C1FF;
-  --color-orange: #FAAD00;
-  --border-color: #D1DCE5;
-  --title-color: var(--color-black);
-  --ifm-code-font-size: 95%;
-  --ifm-tabs-color: var(--color-black);
-  --ifm-navbar-link-color: var(--color-black);
-  --ifm-menu-color-background-hover: rgba(0, 193, 255, .15);
-  --ifm-menu-color-background-active: rgba(0, 193, 255, .15);
-  --ifm-font-color-base: var(--color-black);
-  --ifm-menu-color: var(--color-black);
-  --ifm-toc-link-color: var(--color-black);
-  --ifm-alert-color: var(--color-black);
-  --ifm-color-primary: var(--color-primary);
-  --ifm-color-primary-dark: var(--color-primary);
-  --ifm-color-primary-darker: var(--color-primary);
-  --ifm-color-primary-darkest: var(--color-primary);
-  --ifm-color-primary-light: var(--color-primary);
-  --ifm-color-primary-lighter: var(--color-primary);
-  --ifm-color-primary-lightest: var(--color-primary);
-  --ifm-toc-border-color: var(--border-color);
-  --ifm-color-success: var(--color-green);
-  --ifm-color-danger: var(--color-red);
-  --ifm-color-info: var(--color-blue);
-  --ifm-color-warning: var(--color-orange);
+  --ifm-color-scheme: dark;
+
+  --ifm-color-emphasis-100: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-200: var(--ifm-color-gray-800);
+  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
+  --ifm-color-emphasis-400: var(--ifm-color-gray-600);
+  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
+  --ifm-color-emphasis-600: var(--ifm-color-gray-400);
+  --ifm-color-emphasis-700: var(--ifm-color-gray-300);
+  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-100);
+
+  --ifm-background-color: #121212;
+  --ifm-background-surface-color: #1e2125;
+
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-contrast-background: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-contrast-background-dark-value))
+    );
+    --ifm-color-$(color)-contrast-foreground: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-contrast-foreground-dark-value))
+    );
 }
+
 html[data-theme='dark'] {
-  --ifm-background-color: var(--color-black);
-  --ifm-background-surface-color: var(--color-black);
-  --ifm-navbar-link-color: var(--color-white);
-  --border-color: #3F4554;
-  --title-color: var(--color-white);
-  --ifm-font-color-base: var(--color-secondary-white);
-  --ifm-alert-color: var(--color-white);
-  --ifm-menu-color: var(--color-white);
-  --ifm-toc-link-color: var(--color-white);
-  --ifm-tabs-color: var(--color-white);
-}
+  --ifm-color-scheme: dark;
+
+  --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
+  --ifm-color-emphasis-100: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-200: var(--ifm-color-gray-800);
+  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
+  --ifm-color-emphasis-400: var(--ifm-color-gray-600);
+  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
+  --ifm-color-emphasis-600: var(--ifm-color-gray-400);
+  --ifm-color-emphasis-700: var(--ifm-color-gray-300);
+  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-100);
+  --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
+
+  --ifm-background-color: #1b1b1d;
+  --ifm-background-surface-color: #242526;
+
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
+  --ifm-color-content: #e3e3e3;
+  --ifm-color-content-secondary: rgba(255, 255, 255, 1);
+
+  --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
+    hue-rotate(149deg) brightness(99%) contrast(95%);
+
+  --ifm-code-background: rgba(255, 255, 255, 0.1);
+
+  --ifm-scrollbar-track-background-color: #444444;
+  --ifm-scrollbar-thumb-background-color: #686868;
+  --ifm-scrollbar-thumb-hover-background-color: #7a7a7a;
+
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.07);
+
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+
+  @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-contrast-background: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-contrast-background-dark-value))
+    );
+    --ifm-color-$(color)-contrast-foreground: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-contrast-foreground-dark-value))
+    );
+  }
