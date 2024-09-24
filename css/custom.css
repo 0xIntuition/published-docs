@@ -2,16 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --ifm-color-scheme:                                                    dark;
+  --ifm-color-scheme: dark;
 
-    --ifm-global-border-width:                                              1px;
-    --ifm-global-radius:                                                 0.4rem;
-    --ifm-global-spacing:                                                  2rem;
-    --ifm-hover-overlay:                                        rgba(0,0,0,.05);
+  --ifm-color-emphasis-100: var(--ifm-color-gray-900);
+  --ifm-color-emphasis-200: var(--ifm-color-gray-800);
+  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
+  --ifm-color-emphasis-400: var(--ifm-color-gray-600);
+  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
+  --ifm-color-emphasis-600: var(--ifm-color-gray-400);
+  --ifm-color-emphasis-700: var(--ifm-color-gray-300);
+  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
+  --ifm-color-emphasis-900: var(--ifm-color-gray-100);
 
-    --ifm-font-color-base:                             var(--ifm-color-content);
-    --ifm-font-color-base-inverse:             var(--ifm-color-content-inverse);
-    --ifm-font-color-secondary:              var(--ifm-color-content-secondary);
+  --ifm-background-color: #0B0B0B;
+  --ifm-background-surface-color: #000000;
+
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
     --ifm-font-family-base:                                 "Inter", sans-serif;
     --ifm-font-family-monospace:                                          "...";
     --ifm-font-size-base:                                                   100%;
@@ -58,6 +65,17 @@ h6 {
   font-weight: var(--ifm-heading-font-weight);
   line-height: var(--ifm-heading-line-height);
   margin: var(--ifm-heading-margin-top) 0 var(--ifm-heading-margin-bottom) 0;
+    
+      @each $color in (primary, secondary, success, info, warning, danger) {
+    --ifm-color-$(color)-contrast-background: color-mod(
+      var(--ifm-color-$(color)),
+      shade(var(--ifm-contrast-background-dark-value))
+    );
+    --ifm-color-$(color)-contrast-foreground: color-mod(
+      var(--ifm-color-$(color)),
+      tint(var(--ifm-contrast-foreground-dark-value))
+    );
+  }
 }
 
 @for $size from 1 to 6 {
@@ -70,33 +88,8 @@ article {
   margin-left: 150px;
   margin-right: auto;
 }
-@each $color in (primary, secondary, success, info, warning, danger) {
-  .text--$(color) {
-    color: var(--ifm-color-$(color));
-  }
-}
 html[data-theme='dark'] {
   --ifm-color-scheme: dark;
-
-  --ifm-color-emphasis-0: var(--ifm-color-gray-1000);
-  --ifm-color-emphasis-100: var(--ifm-color-gray-900);
-  --ifm-color-emphasis-200: var(--ifm-color-gray-800);
-  --ifm-color-emphasis-300: var(--ifm-color-gray-700);
-  --ifm-color-emphasis-400: var(--ifm-color-gray-600);
-  --ifm-color-emphasis-500: var(--ifm-color-gray-500);
-  --ifm-color-emphasis-600: var(--ifm-color-gray-400);
-  --ifm-color-emphasis-700: var(--ifm-color-gray-300);
-  --ifm-color-emphasis-800: var(--ifm-color-gray-200);
-  --ifm-color-emphasis-900: var(--ifm-color-gray-100);
-  --ifm-color-emphasis-1000: var(--ifm-color-gray-0);
-
-  --ifm-background-color: #0B0B0B;
-  --ifm-background-surface-color: #000000;
-
-  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
-
-  --ifm-color-content: #e3e3e3;
-  --ifm-color-content-secondary: rgba(255, 255, 255, 1);
 
   --ifm-breadcrumb-separator-filter: invert(64%) sepia(11%) saturate(0%)
     hue-rotate(149deg) brightness(99%) contrast(95%);
@@ -110,15 +103,4 @@ html[data-theme='dark'] {
   --ifm-table-stripe-background: rgba(255, 255, 255, 0.07);
 
   --ifm-toc-border-color: var(--ifm-color-emphasis-200);
-
-  @each $color in (primary, secondary, success, info, warning, danger) {
-    --ifm-color-$(color)-contrast-background: color-mod(
-      var(--ifm-color-$(color)),
-      shade(var(--ifm-contrast-background-dark-value))
-    );
-    --ifm-color-$(color)-contrast-foreground: color-mod(
-      var(--ifm-color-$(color)),
-      tint(var(--ifm-contrast-foreground-dark-value))
-    );
-  }
 }
