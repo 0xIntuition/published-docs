@@ -93,12 +93,19 @@ const config = {
           alt: "Logo",
           src: "img/intuition-logo-white.svg",
         },
-         items: [
-          {
-            type: "localeDropdown",
-            position: "right",
-          },
-        ],
+        items: [
+                    {
+                        href: 'https://github.com/0xIntuition',
+                        label: 'GitHub',
+                        position: 'left',
+                    },
+                    {
+                        label: 'Discord',
+                        href: 'https://discord.com/channels/909531430881746974/1151564740255043604',
+                        position: 'left',
+                    },
+                ],
+            },
       },
      // prism: {
      //   theme: darkCodeTheme,
