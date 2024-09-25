@@ -46,7 +46,7 @@
     --ifm-global-shadow-tl:    28px 0 rgba(0,0,0,.2),0 2px 4px 0 rgba(0,0,0,.1);
 
   --ifm-heading-color: inherit;
-  --ifm-heading-margin-top: 0;
+  --ifm-heading-margin-top: 15px;
   --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
   --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-heading-font-weight: var(--ifm-font-weight-bold);
@@ -61,7 +61,7 @@
 }
 html[data-theme='dark'] {
   --ifm-background-color: var(--color-black);
-  --ifm-background-surface-color: var(--color-grey);
+  --ifm-background-surface-color: var(--color-black);
   --ifm-navbar-link-color: var(--color-white);
   --border-color: #737373;
   --title-color: var(--color-white);
@@ -81,7 +81,7 @@ h6 {
   font-family: var(--ifm-heading-font-family);
   font-weight: var(--ifm-heading-font-weight);
   line-height: var(--ifm-heading-line-height);
-  margin: var(--ifm-heading-margin-top) 0 var(--ifm-heading-margin-bottom) 0;
+  margin: var(--ifm-heading-margin-top) 15px var(--ifm-heading-margin-bottom) 0;
 }
 
 
@@ -92,8 +92,8 @@ h6 {
 }
 article {
   max-width: 1000px;
-  margin-left: 50px;
-  margin-right: auto;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .docusaurus-highlight-code-line {
