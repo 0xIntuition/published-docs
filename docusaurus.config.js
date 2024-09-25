@@ -106,7 +106,6 @@ const config = {
                     },
                 ],
             },
-      },
      // prism: {
      //   theme: darkCodeTheme,
      //   darkTheme: darkCodeTheme,
