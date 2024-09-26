@@ -106,10 +106,10 @@ const config = {
                     },
                 ],
             },
-     prism: {
-     theme: darkCodeTheme,
-     darkTheme: darkCodeTheme,
-     },
+   //  prism: {
+     //theme: darkCodeTheme,
+     //darkTheme: darkCodeTheme,
+     //},
     }),
 };
 
