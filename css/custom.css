@@ -1,1 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+
+  --ifm-code-font-size: 110%;
+  --ifm-menu-color-background-hover: rgba(0, 193, 255, .15);
+  --ifm-menu-color-background-active: rgba(0, 193, 255, .15);
+  --ifm-font-family-base:                                     "Inter", sans-serif;
+  --ifm-link-decoration:                                                     none;
+  --ifm-navbar-background-color:                                        #101010;
+  --ifm-navbar-height:                                                    3.75rem;
+  --ifm-color-primary:                                                  #007AFF;
+  --ifm-font-family-base:                                               "...";
+      --ifm-font-family-monospace:                                          "...";
+      --ifm-font-size-base:                                                  100%;
+      --ifm-font-weight-light:                                                300;
+      --ifm-font-weight-normal:                                               400;
+      --ifm-font-weight-semibold:                                             500;
+      --ifm-font-weight-bold:                                                 700;
+      --ifm-font-weight-base:                       var(--ifm-font-weight-normal);
+      --ifm-line-height-base:                                                1.65;
+
+}
 
