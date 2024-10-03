@@ -1,5 +1,5 @@
 html[data-theme='dark'] {
-  background-position: 0px -30vh
+  background-position: 0px -30vh;
   background: radial-gradient(50% 50% at 50% 50%, #010310 0%, #030012 100%);
 }
 
