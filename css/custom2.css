@@ -126,8 +126,9 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__title {
-  font-family: "Geist", sans-serif;
+  font-family: 'Geist', sans-serif;
   color: var(--ifm-color-primary);
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -190,6 +191,11 @@ html[data-theme='dark'] .admonition-note {
 
 html[data-theme='dark'] .admonition-icon svg {
   fill: var(--ifm-color-white);
+}
+html[data-theme='dark'] .admonition {
+  background: transparent;
+  color: var(--ifm-color-white);
+  border: 1px solid var(--ifm-color-emphasis-300);
 }
 
 html[data-theme='dark'] .DocSearch {
