@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Geist';
-  src: url('Geist-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 :root {
   --ifm-dark-value: 10%;
   --ifm-darker-value: 15%;
