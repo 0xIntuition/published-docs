@@ -115,5 +115,14 @@ button:hover {
 .admonition-title {
   color: var(--ifm-color-primary); /* Primary color for admonition title */
 }
+&:hover {
+  color: var(--ifm-link-hover-color);
+  /* autoprefixer: ignore next */
+  text-decoration: var(--ifm-link-hover-decoration);
+}
+
+&:not([href]) {
+  text-decoration: none;
+}
 
 
