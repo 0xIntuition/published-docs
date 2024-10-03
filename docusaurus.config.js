@@ -88,7 +88,7 @@ const config = {
         ignorePatterns: [],
       },
       navbar: {
-        title: "INTUITION DOCS",
+        title: "Intuition Docs",
         logo: {
           alt: "Logo",
           src: "img/intuition-icon3.png",
