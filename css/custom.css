@@ -4,6 +4,8 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Updated radial gradient background for subtle visibility in dark mode */
 html[data-theme='dark'] {
   background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
@@ -24,7 +26,7 @@ html[data-theme='light'] {
   --ifm-link-decoration: none;
   --ifm-navbar-background-color: #111111; /* Navbar slightly lighter than background */
   --ifm-navbar-height: 3.75rem;
-  --ifm-font-family-base: 'Geist', sans-serif; /* Applying Geist font */
+/*  --ifm-font-family-base: 'Geist', sans-serif; */
   --ifm-font-size-base: 110%;
   --ifm-font-weight-light: 300;
   --ifm-font-weight-normal: 400;
