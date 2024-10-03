@@ -87,45 +87,4 @@ button:hover {
   background-color: var(--ifm-color-primary-light); /* Lighter hover effect for buttons */
 }
 
-/* Admonitions: Fully transparent background with only visible border */
-  &.alert--secondary {  /* Note Admonition */
-    --ifm-alert-background-color-highlight : transparent;
-    --ifm-alert-background-color           : transparent;
-    --ifm-alert-foreground-color           : transparent;
-    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
-  };
-  &.alert--success {  /* Tip Admonition */
-    --ifm-alert-background-color-highlight : transparent;
-    --ifm-alert-background-color           : transparent;
-    --ifm-alert-foreground-color           : transparent;
-    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
-  };
-  &.alert--info {  /* Info Admonition */
-    --ifm-alert-background-color-highlight : transparent;
-    --ifm-alert-background-color           : transparent;
-    --ifm-alert-foreground-color           : transparent;
-    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
-  };
-  &.alert--warning {  /* Warning Admonition */
-    --ifm-alert-background-color-highlight : transparent;
-    --ifm-alert-background-color           : transparent;
-    --ifm-alert-foreground-color           : transparent;
-    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
-  };
-  &.alert--danger {  /* Danger Admonition */
-    --ifm-alert-background-color-highlight : transparent;
-    --ifm-alert-background-color           : transparent;
-    --ifm-alert-foreground-color           : transparent;
-    --ifm-alert-border-color               : var(--ifm-color-emphasis-300);
-  };
-&:hover {
-  color: var(--ifm-link-hover-color);
-  /* autoprefixer: ignore next */
-  text-decoration: var(--ifm-link-hover-decoration);
-}
-
-&:not([href]) {
-  text-decoration: none;
-}
-
 
