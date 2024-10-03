@@ -232,8 +232,6 @@
   --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
   --ifm-menu-link-padding-horizontal: 1rem;
   --ifm-menu-link-padding-vertical: 0.375rem;
-  --ifm-menu-link-sublist-icon: url(
-    data:image/svg + xml;utf8,
   --ifm-menu-link-sublist-icon-filter: none;
   --ifm-navbar-background-color: #0C0C0C;
   --ifm-navbar-height: 3.75rem;
