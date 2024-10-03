@@ -6,6 +6,16 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+html[data-theme='dark'] {
+  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
+}
+
+/* Force dark mode and apply font */
+html[data-theme='light'] {
+  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
+  font-family: 'Geist', sans-serif; /* Apply Geist font */
+}
+
 :root {
   --ifm-color-primary: #006FE8;
   --ifm-color-primary-dark: #1d68e1;
@@ -54,11 +64,11 @@ html[data-theme='dark'] {
 
   /* --ifm-background-color: #191b1f; */
   --ifm-navbar-background-color: #0C0C0C;
-  --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
+ --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
-  background-position: 0px -30vh;
-  background-repeat: no-repeat;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);
+  /*background-position: 0px -30vh;*/
+  /*background-repeat: no-repeat;*/
+  /*background-image: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);*/
 
   /* any other colors you wish to overwrite */
 }
