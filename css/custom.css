@@ -4,14 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Updated radial gradient background with blue color (#007AFF) for dark mode */
+/* Updated radial gradient background for subtle visibility in dark mode */
 html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, #007AFF 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.05) 0%, #0d0d0d 100%);
 }
 
 /* Force dark mode and apply font */
 html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, #007AFF 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.05) 0%, #0d0d0d 100%);
   font-family: 'Geist', sans-serif; /* Apply Geist font */
 }
 
@@ -44,6 +44,12 @@ html[data-theme='light'] {
   --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
+}
+
+/* Navbar bottom border */
+.navbar__inner {
+  background-color: #111111; /* Slightly lighter than the background */
+  border-bottom: 1px solid #333333; /* Add a bottom border */
 }
 
 [data-theme='dark'] {
@@ -100,13 +106,14 @@ button:hover {
   background-color: var(--ifm-color-primary-light); /* Lighter hover effect for buttons */
 }
 
-/* Admonitions: No background color, only border visible */
+/* Admonitions: Fully transparent background with only visible border */
 .admonition {
-  background-color: transparent; /* No background color */
+  background-color: transparent !important; /* Ensure no background color */
   border-left: 3px solid var(--ifm-color-primary); /* Only border visible */
 }
 
 .admonition-title {
   color: var(--ifm-color-primary); /* Primary color for admonition title */
 }
+
 
