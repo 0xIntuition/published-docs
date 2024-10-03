@@ -1,12 +1,12 @@
 html[data-theme='dark'] {
-  background-position: 0px -30vh;
-  background: radial-gradient(50% 50% at 50% 50%, #010310 0%, #030012 100%);
+  background-position: 0px -10vh;
+  background: radial-gradient(50% 50% at 50% 50%, #000420 0%, #030012 100%);
 }
 
 /* Force dark mode and apply font */
-html[data-theme='light'] {
+/*html[data-theme='light'] {
   background: radial-gradient(50% 50% at 50% 50%, #010310 0%, #030012 100%);
-  font-family: 'Geist', sans-serif; /*Apply Geist font */
+  font-family: 'Geist', sans-serif; */
 }
 
 :root {
@@ -133,14 +133,14 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__link {
-  /* font-family: "Archivo", sans-serif; */
+  font-family: "Inter", sans-serif;
   color: var(--ifm-color-primary);
   font-weight: 400;
 }
 
 .navbar__logo {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 
 .menu__link {
