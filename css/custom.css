@@ -4,14 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Adding the radial gradient background for dark mode */
+/* Updated radial gradient background with blue color (#007AFF) for dark mode */
 html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, #1e1e1e 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #007AFF 0%, #0d0d0d 100%);
 }
 
 /* Force dark mode and apply font */
 html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, #1e1e1e 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #007AFF 0%, #0d0d0d 100%);
   font-family: 'Geist', sans-serif; /* Apply Geist font */
 }
 
@@ -34,7 +34,7 @@ html[data-theme='light'] {
   --ifm-menu-color-background-active: rgba(0, 193, 255, 0.15);
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-link-decoration: none;
-  --ifm-navbar-background-color: #101010;
+  --ifm-navbar-background-color: #111111; /* Navbar slightly lighter than background */
   --ifm-navbar-height: 3.75rem;
   --ifm-font-family-base: 'Geist', sans-serif; /* Applying Geist font */
   --ifm-font-size-base: 110%;
@@ -47,20 +47,20 @@ html[data-theme='light'] {
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #2fbcf9; /* Accent color as per provided CSS */
-  --ifm-color-primary-dark: #12b3f8;
-  --ifm-color-primary-darker: #07adf5;
-  --ifm-color-primary-darkest: #068ec9;
-  --ifm-color-primary-light: #4cc5fa;
-  --ifm-color-primary-lighter: #5acafa;
-  --ifm-color-primary-lightest: #85d8fb;
+  --ifm-color-primary: #007AFF; /* Updated primary color */
+  --ifm-color-primary-dark: #006AE0;
+  --ifm-color-primary-darker: #005FCC;
+  --ifm-color-primary-darkest: #0054B8;
+  --ifm-color-primary-light: #339CFF;
+  --ifm-color-primary-lighter: #66B5FF;
+  --ifm-color-primary-lightest: #99CEFF;
   --ifm-background-color: #0d0d0d;
   --ifm-color-text: #e5e5e5;
 }
 
-/* Headings */
+/* Headings should be white */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--ifm-color-primary); /* Accent color for headings */
+  color: #ffffff; /* Headings set to white */
   font-weight: 600;
 }
 
@@ -99,3 +99,14 @@ button {
 button:hover {
   background-color: var(--ifm-color-primary-light); /* Lighter hover effect for buttons */
 }
+
+/* Admonitions: No background color, only border visible */
+.admonition {
+  background-color: transparent; /* No background color */
+  border-left: 3px solid var(--ifm-color-primary); /* Only border visible */
+}
+
+.admonition-title {
+  color: var(--ifm-color-primary); /* Primary color for admonition title */
+}
+
