@@ -91,18 +91,18 @@ const config = {
         title: "Intuition Docs",
         logo: {
           alt: "Logo",
-          src: "img/intuition-icon-white.png",
+          src: "img/logo-bw.svg",
         },
         items: [
                     {
                         href: 'https://github.com/0xIntuition',
                         label: 'GitHub',
-                        position: 'left',
+                        position: 'right',
                     },
                     {
                         label: 'Discord',
                         href: 'https://discord.com/channels/909531430881746974/1151564740255043604',
-                        position: 'left',
+                        position: 'right',
                     },
                 ],
             },
