@@ -91,7 +91,7 @@ const config = {
         title: "Intuition Docs",
         logo: {
           alt: "Logo",
-          src: "img/intuition-icon3.png",
+          src: "img/intuition-icon-white.png",
         },
         items: [
                     {
