@@ -5,7 +5,7 @@ html[data-theme='dark'] {
 /* Force dark mode and apply font */
 html[data-theme='light'] {
   background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
-  font-family: 'Geist', sans-serif; /* Apply Geist font */
+  /* font-family: 'Geist', sans-serif; Apply Geist font */
 }
 
 :root {
