@@ -44,10 +44,11 @@ html[data-theme='light'] {
   --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
+  //--ifm-navbar-link-color: #111111;
 }
 
 /* Navbar bottom border */
-.navbar__inner {
+.navbar {
   background-color: #111111; /* Slightly lighter than the background */
   border-bottom: 1px solid #333333; /* Add a bottom border */
 }
@@ -91,8 +92,12 @@ code {
   position: relative;
 }
 
-.navbar__item.navbar__link::after {
+.navbar__item.navbar__link {
   content: none; /* No arrows in the top nav */
+}
+.footer--dark {
+  border-top: 1px solid #333333;
+  --ifm-footer-background-color: #111111;
 }
 
 /* Buttons */
@@ -107,14 +112,37 @@ button:hover {
 }
 
 /* Admonitions: Fully transparent background with only visible border */
-.admonition {
-  background-color: transparent !important; /* Ensure no background color */
-  border-left: 3px solid var(--ifm-color-primary); /* Only border visible */
-}
-
-.admonition-title {
-  color: var(--ifm-color-primary); /* Primary color for admonition title */
-}
+.alert {
+  &.alert--secondary {  /* Note Admonition */
+    --ifm-alert-background-color-highlight : transparent;
+    --ifm-alert-background-color           : transparent;
+    --ifm-alert-foreground-color           : transparent;
+    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
+  };
+  &.alert--success {  /* Tip Admonition */
+    --ifm-alert-background-color-highlight : transparent;
+    --ifm-alert-background-color           : transparent;
+    --ifm-alert-foreground-color           : transparent;
+    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
+  };
+  &.alert--info {  /* Info Admonition */
+    --ifm-alert-background-color-highlight : transparent;
+    --ifm-alert-background-color           : transparent;
+    --ifm-alert-foreground-color           : transparent;
+    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
+  };
+  &.alert--warning {  /* Warning Admonition */
+    --ifm-alert-background-color-highlight : transparent;
+    --ifm-alert-background-color           : transparent;
+    --ifm-alert-foreground-color           : transparent;
+    --ifm-alert-border-color               :  var(--ifm-color-emphasis-300);
+  };
+  &.alert--danger {  /* Danger Admonition */
+    --ifm-alert-background-color-highlight : transparent;
+    --ifm-alert-background-color           : transparent;
+    --ifm-alert-foreground-color           : transparent;
+    --ifm-alert-border-color               : var(--ifm-color-emphasis-300);
+  };
 &:hover {
   color: var(--ifm-link-hover-color);
   /* autoprefixer: ignore next */
