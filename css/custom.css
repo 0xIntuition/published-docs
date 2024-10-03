@@ -6,28 +6,16 @@
 }
 /* Updated radial gradient background for subtle visibility in dark mode */
 html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.05) 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
 }
 
 /* Force dark mode and apply font */
 html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 122, 255, 0.05) 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
   font-family: 'Geist', sans-serif; /* Apply Geist font */
 }
 
-/* Navbar and footer adjustments to remove arrows */
-.navbar__link,
-.footer__link-item {
-  display: inline-block;
-  padding-right: 0px; /* Ensure no space for arrows */
-}
-
-.navbar__link::after,
-.footer__link-item::after {
-  content: none; /* Remove any arrows or icons next to links */
-}
-
-/* Custom styling based on provided CSS */
+/* Custom styling */
 :root {
   --ifm-code-font-size: 110%;
   --ifm-menu-color-background-hover: rgba(0, 193, 255, 0.15);
@@ -61,8 +49,8 @@ html[data-theme='light'] {
   --ifm-color-primary-light: #339CFF;
   --ifm-color-primary-lighter: #66B5FF;
   --ifm-color-primary-lightest: #99CEFF;
-  --ifm-background-color: #0d0d0d;
-  --ifm-color-text: #e5e5e5;
+ // --ifm-background-color: #0d0d0d;
+ // --ifm-color-text: #e5e5e5;
 }
 
 /* Headings should be white */
@@ -77,24 +65,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--ifm-color-primary-light); /* Lighter accent on hover */
-}
-
 /* Code blocks */
 code {
   background-color: var(--ifm-code-background, #1f1f1f); /* Use darker code block background */
   color: #e5e5e5; /* Light text for code */
 }
 
-/* Remove arrows in navigation */
-.navbar__item.navbar__link {
-  position: relative;
-}
-
-.navbar__item.navbar__link {
-  content: none; /* No arrows in the top nav */
-}
 .footer--dark {
   border-top: 1px solid #333333;
   --ifm-footer-background-color: #111111;
@@ -112,7 +88,6 @@ button:hover {
 }
 
 /* Admonitions: Fully transparent background with only visible border */
-.alert {
   &.alert--secondary {  /* Note Admonition */
     --ifm-alert-background-color-highlight : transparent;
     --ifm-alert-background-color           : transparent;
