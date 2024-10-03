@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Geist';
-  src: url('Geist-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 html[data-theme='dark'] {
   background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
 }
