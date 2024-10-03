@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('Geist-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --ifm-color-primary: #006FE8;
   --ifm-color-primary-dark: #1d68e1;
