@@ -1,10 +1,10 @@
 html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, #006FE8 0%, #030012 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #001025 0%, #030012 100%);
 }
 
 /* Force dark mode and apply font */
 html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, #006FE8 0%, #030012 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #001025 0%, #030012 100%);
   /* font-family: 'Geist', sans-serif; Apply Geist font */
 }
 
@@ -56,7 +56,7 @@ html[data-theme='dark'] {
   /* --ifm-color-secondary: black; */
 
   /* --ifm-background-color: #191b1f; */
-  --ifm-navbar-background-color: #0C0C0C;
+  --ifm-navbar-background-color: #131313;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
   /*background-position: 0px -30vh;*/
@@ -121,9 +121,9 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__title {
-  /* font-family: "Archivo", sans-serif; */
+  font-family: "Geist", sans-serif;
   color: var(--ifm-color-primary);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .navbar__link {
@@ -133,13 +133,13 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__logo {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 .menu__link {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .docusaurus-highlight-code-line {
@@ -267,6 +267,7 @@ html[data-theme='dark'] .DocSearch-Hit a {
 
 .table-of-contents {
   opacity: 0.4;
+  font-weight: 400;
 }
 
 .table-of-contents:hover {
