@@ -1,26 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-:root{
-
-  --ifm-code-font-size: 110%;
-  --ifm-menu-color-background-hover: rgba(0, 193, 255, .15);
-  --ifm-menu-color-background-active: rgba(0, 193, 255, .15);
-  --ifm-font-family-base:                                     "Inter", sans-serif;
-  --ifm-link-decoration:                                                     none;
-  --ifm-navbar-background-color:                                        #101010;
-  --ifm-navbar-height:                                                    3.75rem;
-  --ifm-color-primary:                                                  #007AFF;
-  --ifm-font-family-base:                                               "...";
-      --ifm-font-family-monospace:                                          "...";
-      --ifm-font-size-base:                                                  110%;
-      --ifm-font-weight-light:                                                300;
-      --ifm-font-weight-normal:                                               400;
-      --ifm-font-weight-semibold:                                             500;
-      --ifm-font-weight-bold:                                                 600;
-      --ifm-font-weight-base:                       var(--ifm-font-weight-normal);
-      --ifm-line-height-base:                                                1.65;
-  
-      --ifm-background-color:                                             #050505;
-      --ifm-background-surface-color:                                     #050505;
-
+@font-face {
+  font-family: 'Geist';
+  src: url('Geist-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Adding the radial gradient background for dark mode */
+html[data-theme='dark'] {
+  background: radial-gradient(50% 50% at 50% 50%, #1e1e1e 0%, #0d0d0d 100%);
 }
 
+/* Force dark mode and apply font */
+html[data-theme='light'] {
+  background: radial-gradient(50% 50% at 50% 50%, #1e1e1e 0%, #0d0d0d 100%);
+  font-family: 'Geist', sans-serif; /* Apply Geist font */
+}
+
+/* Navbar and footer adjustments to remove arrows */
+.navbar__link,
+.footer__link-item {
+  display: inline-block;
+  padding-right: 0px; /* Ensure no space for arrows */
+}
+
+.navbar__link::after,
+.footer__link-item::after {
+  content: none; /* Remove any arrows or icons next to links */
+}
+
+/* Custom styling based on provided CSS */
+:root {
+  --ifm-code-font-size: 110%;
+  --ifm-menu-color-background-hover: rgba(0, 193, 255, 0.15);
+  --ifm-menu-color-background-active: rgba(0, 193, 255, 0.15);
+  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-link-decoration: none;
+  --ifm-navbar-background-color: #101010;
+  --ifm-navbar-height: 3.75rem;
+  --ifm-font-family-base: 'Geist', sans-serif; /* Applying Geist font */
+  --ifm-font-size-base: 110%;
+  --ifm-font-weight-light: 300;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-base: var(--ifm-font-weight-normal);
+  --ifm-line-height-base: 1.65;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #2fbcf9; /* Accent color as per provided CSS */
+  --ifm-color-primary-dark: #12b3f8;
+  --ifm-color-primary-darker: #07adf5;
+  --ifm-color-primary-darkest: #068ec9;
+  --ifm-color-primary-light: #4cc5fa;
+  --ifm-color-primary-lighter: #5acafa;
+  --ifm-color-primary-lightest: #85d8fb;
+  --ifm-background-color: #0d0d0d;
+  --ifm-color-text: #e5e5e5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ifm-color-primary); /* Accent color for headings */
+  font-weight: 600;
+}
+
+/* Links without arrows in navbar and footer */
+a {
+  color: var(--ifm-color-primary); /* Accent color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ifm-color-primary-light); /* Lighter accent on hover */
+}
+
+/* Code blocks */
+code {
+  background-color: var(--ifm-code-background, #1f1f1f); /* Use darker code block background */
+  color: #e5e5e5; /* Light text for code */
+}
+
+/* Remove arrows in navigation */
+.navbar__item.navbar__link {
+  position: relative;
+}
+
+.navbar__item.navbar__link::after {
+  content: none; /* No arrows in the top nav */
+}
+
+/* Buttons */
+button {
+  background-color: var(--ifm-color-primary-dark);
+  color: #ffffff;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--ifm-color-primary-light); /* Lighter hover effect for buttons */
+}
