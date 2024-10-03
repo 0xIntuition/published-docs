@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
+/* const lightCodeTheme = require("prism-react-renderer/themes/github"); */
+/* const darkCodeTheme = require("prism-react-renderer/themes/vsDark"); */
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -29,9 +29,9 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: [
+          customCss: require.resolve('./css/custom2.css'),
+          customCss2: [
             require.resolve("./css/docu-notion-styles.css"),
-            require.resolve("./css/custom2.css"),
             require.resolve("./css/colors.css"),
             require.resolve(
               "./css/gifplayer.css"
@@ -42,6 +42,14 @@ const config = {
       }),
     ],
   ],
+   stylesheets: [
+        {
+          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+          type: 'text/css',
+          integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+          crossorigin: 'anonymous',
+        },
+      ],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "fr"],
