@@ -32,7 +32,6 @@ html[data-theme='light'] {
   --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
-  //--ifm-navbar-link-color: #111111;
 }
 
 /* Navbar bottom border */
@@ -49,8 +48,6 @@ html[data-theme='light'] {
   --ifm-color-primary-light: #339CFF;
   --ifm-color-primary-lighter: #66B5FF;
   --ifm-color-primary-lightest: #99CEFF;
- // --ifm-background-color: #0d0d0d;
- // --ifm-color-text: #e5e5e5;
 }
 
 /* Headings should be white */
