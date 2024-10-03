@@ -100,7 +100,7 @@ hr {
 }
 
 html[data-theme='dark'] .navbar {
-  background-color: #0C0C0C;
+  background-color: #1B1B1B;
   border-bottom: var(--ifm-toc-border-color) 1px solid;
 }
 .container {
