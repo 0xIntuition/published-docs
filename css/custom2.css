@@ -52,7 +52,7 @@
   --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   --ifm-global-spacing: 1.75rem;
-  --ifm-navbar-background-color: #131313;
+  --ifm-navbar-background-color:  #0f0f0f;
   --ifm-menu-color: var(--ifm-color-emphasis-700);
   --ifm-menu-color-active: var(--ifm-color-primary);
 }
