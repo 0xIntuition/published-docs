@@ -33,6 +33,7 @@
   --ifm-h4-font-size: 0.875rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
+}
 /*  --ifm-image-alignment-padding: 1.25rem;
   --ifm-leading-desktop: 1.25;
   --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
