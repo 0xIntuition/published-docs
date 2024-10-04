@@ -6,8 +6,8 @@
 /* Force dark mode and apply font */
 /*html[data-theme='light'] {
   background: radial-gradient(50% 50% at 50% 50%, #010310 0%, #030012 100%);
-  font-family: 'Geist', sans-serif; */
-}
+  font-family: 'Geist', sans-serif; 
+}*/
 
 :root {
   --ifm-color-primary: #006FE8;
