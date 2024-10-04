@@ -48,6 +48,10 @@
 
   --ifm-global-spacing: 1.5rem;
   --ifm-navbar-background-color: #131313;
+  --ifm-menu-color: var(--ifm-color-emphasis-700);
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-menu-color-background-active: var(--ifm-hover-overlay);
+  --ifm-menu-color-background-hover: var(--ifm-hover-overlay);
 }
 
 html {
@@ -64,9 +68,9 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: #131313;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
-  background-position: 0px -30vh;
+  background-position: 0px -50vh;
   background-repeat: no-repeat;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(12, 12, 12, 0.653) 100%);
 
   /* any other colors you wish to overwrite */
 }
@@ -274,7 +278,7 @@ html[data-theme='dark'] .DocSearch-Hit a {
 
 .table-of-contents {
   opacity: 0.4;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .table-of-contents:hover {
