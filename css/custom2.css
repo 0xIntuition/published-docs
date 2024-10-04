@@ -1,7 +1,7 @@
-html[data-theme='dark'] {
+/*html[data-theme='dark'] {
   background-position: 0px -10vh;
   background: radial-gradient(50% 50% at 50% 50%, #000420 0%, #030012 100%);
-}
+}*/
 
 /* Force dark mode and apply font */
 /*html[data-theme='light'] {
@@ -19,7 +19,7 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: #80aaef;
   --ifm-list-left-padding: 2rem;
   --ifm-list-margin: 1rem;
-  --ifm-list-item-margin: 0.5rem;
+  --ifm-list-item-margin: 1rem;
   --ifm-list-paragraph-margin: 1rem;
 
   --collapse-button-bg-color-dark: #2e333a;
@@ -29,7 +29,7 @@ html[data-theme='dark'] {
  /* --ifm-font-family-base: "Inter", sans-serif;*/
   --ifm-h1-font-size: 1.75rem;
   --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.25rem;
+  --ifm-h3-font-size: 1.35rem;
   --ifm-h4-font-size: 1rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
@@ -47,7 +47,7 @@ html[data-theme='dark'] {
   --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   --ifm-global-spacing: 1.5rem;
-  /* --ifm-navbar-background-color: rgba(255, 0.2); */
+  --ifm-navbar-background-color: #131313;
 }
 
 html {
@@ -64,9 +64,9 @@ html[data-theme='dark'] {
   --ifm-navbar-background-color: #131313;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
-  /*background-position: 0px -30vh;*/
-  /*background-repeat: no-repeat;*/
-  /*background-image: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);*/
+  background-position: 0px -30vh;
+  background-repeat: no-repeat;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%);
 
   /* any other colors you wish to overwrite */
 }
