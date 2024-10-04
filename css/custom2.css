@@ -68,7 +68,7 @@ html[data-theme='dark'] {
 
   background-position: 0px -50vh;
   background-repeat: no-repeat;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(12, 12, 12, 0.653) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.08) 0%, rgba(0, 0, 0, 0.9) 100%);
 
   /* any other colors you wish to overwrite */
 }
