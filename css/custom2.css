@@ -33,6 +33,11 @@
   --ifm-h4-font-size: 1rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
+  --ifm-font-size-base: 110%;
+  --ifm-font-weight-light: 200;
+  --ifm-font-weight-normal: 300;
+  --ifm-font-weight-semibold: 400;
+  --ifm-font-weight-bold: 500;
 
   /* --ifm-table-border-color: var(--ifm-color-emphasis-100); */
   /* --ifm-toc-border-color: none; */
