@@ -27,17 +27,17 @@
   --ifm-code-font-size: 110%;
 
  /* --ifm-font-family-base: "Inter", sans-serif;*/
-  --ifm-h1-font-size: 1.5rem;
-  --ifm-h2-font-size: 1.35rem;
-  --ifm-h3-font-size: 1.20rem;
-  --ifm-h4-font-size: 1rem;
+  --ifm-h1-font-size: 1.6rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.350rem;
+  --ifm-h4-font-size: 1.2rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
   --ifm-font-size-base: 110%;
   --ifm-font-weight-light: 200;
-  --ifm-font-weight-normal: 300;
-  --ifm-font-weight-semibold: 400;
-  --ifm-font-weight-bold: 500;
+  --ifm-font-weight-normal: 400;
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 600;
 
   /* --ifm-table-border-color: var(--ifm-color-emphasis-100); */
   /* --ifm-toc-border-color: none; */
