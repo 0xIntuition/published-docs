@@ -24,21 +24,20 @@ html[data-theme='light'] {
   --ifm-menu-color-background-active: rgba(0, 193, 255, 0.15);
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-link-decoration: none;
-  --ifm-navbar-background-color: #111111; /* Navbar slightly lighter than background */
   --ifm-navbar-height: 3.75rem;
 /*  --ifm-font-family-base: 'Geist', sans-serif; */
   --ifm-font-size-base: 110%;
-  --ifm-font-weight-light: 300;
-  --ifm-font-weight-normal: 400;
-  --ifm-font-weight-semibold: 500;
-  --ifm-font-weight-bold: 600;
+  --ifm-font-weight-light: 200;
+  --ifm-font-weight-normal: 300;
+  --ifm-font-weight-semibold: 400;
+  --ifm-font-weight-bold: 500;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
 }
 
 /* Navbar bottom border */
 .navbar {
-  background-color: #111111; /* Slightly lighter than the background */
+  background-color: #000000; /* Slightly lighter than the background */
   border-bottom: 1px solid #333333; /* Add a bottom border */
 }
 
@@ -55,7 +54,7 @@ html[data-theme='light'] {
 /* Headings should be white */
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff; /* Headings set to white */
-  font-weight: 600;
+  font-weight: 550;
 }
 
 /* Links without arrows in navbar and footer */
@@ -72,7 +71,7 @@ code {
 
 .footer--dark {
   border-top: 1px solid #333333;
-  --ifm-footer-background-color: #111111;
+  --ifm-footer-background-color: #000000;
 }
 
 /* Buttons */
