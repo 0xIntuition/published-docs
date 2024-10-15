@@ -25,7 +25,7 @@ html[data-theme='light'] {
   --ifm-font-family-base: "Inter", sans-serif;
   --ifm-link-decoration: none;
   --ifm-navbar-height: 3.75rem;
-/*  --ifm-font-family-base: 'Geist', sans-serif; */
+/*  --ifm-font-family-base: "Geist", sans-serif; */
   --ifm-font-size-base: 110%;
   --ifm-font-weight-light: 200;
   --ifm-font-weight-normal: 300;
