@@ -52,7 +52,7 @@
   --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   --ifm-global-spacing: 1.75rem;
-  --ifm-navbar-background-color:  #111111;
+  --ifm-navbar-background-color:  #000000;
   --ifm-menu-color: var(--ifm-color-emphasis-700);
   --ifm-menu-color-active: var(--ifm-color-primary);
 }
@@ -63,12 +63,12 @@ html {
 
 html[data-theme='dark'] {
   --ifm-color-primary: white;
-  --ifm-color-primary-dark: #5a91ea;
+  --ifm-color-primary-dark: #23B0FF;
 
   /* --ifm-color-secondary: black; */
 
   /* --ifm-background-color: #191b1f; */
-  --ifm-navbar-background-color: #111111;
+  --ifm-navbar-background-color: #000000;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
   background-position: 0px -50vh;
@@ -98,7 +98,7 @@ hr {
 }
 
 .menu__link--sublist:after {
-  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
   /* color: var(  --ifm-color-primary); */
 }
 
@@ -135,8 +135,8 @@ html[data-theme='dark'] .navbar {
 .navbar__title {
   font-family: 'Geist', sans-serif;
   color: var(--ifm-color-primary);
-  font-size: 1.4rem;
-  font-weight: 550;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .navbar__link {
@@ -152,7 +152,7 @@ html[data-theme='dark'] .navbar {
 
 .menu__link {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .docusaurus-highlight-code-line {
@@ -200,7 +200,7 @@ html[data-theme='dark'] .admonition-icon svg {
   fill: var(--ifm-color-white);
 }
 html[data-theme='dark'] .admonition {
-  background: transparent;
+  background: none;
   color: var(--ifm-color-white);
   border: 1px solid var(--ifm-color-emphasis-300);
 }
@@ -276,12 +276,12 @@ html[data-theme='dark'] .DocSearch-Hit a {
 }
 
 .menu__link--active {
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .table-of-contents {
   opacity: 0.4;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .table-of-contents:hover {
