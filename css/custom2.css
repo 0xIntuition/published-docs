@@ -52,7 +52,7 @@
   --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   --ifm-global-spacing: 1.75rem;
-  --ifm-navbar-background-color:  #0f0f0f;
+  --ifm-navbar-background-color:  #111111;
   --ifm-menu-color: var(--ifm-color-emphasis-700);
   --ifm-menu-color-active: var(--ifm-color-primary);
 }
@@ -68,7 +68,7 @@ html[data-theme='dark'] {
   /* --ifm-color-secondary: black; */
 
   /* --ifm-background-color: #191b1f; */
-  --ifm-navbar-background-color: #0f0f0f;
+  --ifm-navbar-background-color: #111111;
   --ifm-global-shadow-md: 0 5px 4px rgba(255, 255, 255, 0.448);
 
   background-position: 0px -50vh;
@@ -107,7 +107,7 @@ hr {
 }
 
 html[data-theme='dark'] .navbar {
-  background-color:  #0f0f0f;
+  background-color:  #111111;
   border-bottom: var(--ifm-toc-border-color) 1px solid;
 }
 .container {
