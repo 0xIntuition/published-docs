@@ -8,12 +8,12 @@
 
 /* Updated radial gradient background for subtle visibility in dark mode */
 html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #000000 0%, #0d0d0d 100%);
 }
 
 /* Force dark mode and apply font */
 html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, #030012 0%, #0d0d0d 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #000000 0%, #0d0d0d 100%);
   font-family: 'Geist', sans-serif; /* Apply Geist font */
 }
 
