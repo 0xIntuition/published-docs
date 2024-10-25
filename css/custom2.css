@@ -185,21 +185,6 @@ iframe {
   margin-top: 3rem;
 }
 
-html[data-theme='dark'] .admonition-note {
-  background: none;
-  color: var(--ifm-color-white);
-  border: 1px solid var(--ifm-color-emphasis-300);
-}
-
-html[data-theme='dark'] .admonition-icon svg {
-  fill: var(--ifm-color-white);
-}
-html[data-theme='dark'] .admonition {
-  background: none;
-  color: var(--ifm-color-white);
-  border: 1px solid var(--ifm-color-emphasis-300);
-}
-
 html[data-theme='dark'] .DocSearch {
   /* --docsearch-text-color: var(--ifm-font-color-100); */
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
@@ -287,32 +272,6 @@ html[data-theme='dark'] .DocSearch-Hit a {
   text-decoration: underline;
 }
 
-.navbar__inner {
-  flex-wrap: unset;
-}
-
-.navbar__item {
-  display: none;
-}
-
-.navbar__item.dropdown {
-  display: inline-block;
-}
-
-.navbar__item.persistent {
-  display: inline-block;
-}
-
-.navbar__item.V3_active.V3 {
-  display: inline-block;
-}
-
-.menu__link.V3_active,
-.V2_active,
-.V1_active {
-  display: none;
-}
-
 .menu__list-item--collapsed .menu__link {
   display: flex;
 }
@@ -348,9 +307,6 @@ html[data-theme='dark'] .DocSearch-Hit a {
     padding-top: initial;
   }
 
- /* .navbar__item {
-    display: none !important;
-  }*/
 
   .footer {
     display: none;
