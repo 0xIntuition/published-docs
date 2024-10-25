@@ -97,7 +97,7 @@ const config = {
         ignorePatterns: [],
       },
       navbar: {
-        hideonScroll: false,
+        hideOnScroll: false,
         title: '',
         logo: {
           alt: 'Logo',
