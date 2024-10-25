@@ -97,14 +97,16 @@ const config = {
         ignorePatterns: [],
       },
       navbar: {
-        title: "Intuition Docs",
+        hideonScroll: false,
+        title: '',
         logo: {
-          alt: "Logo",
-          src: "img/intuition-logo-white.svg",
+          alt: 'Logo',
+          src: 'img/intuition_full_logo_2.svg',
+          href: 'https://intuition.systems',
         },
         items: [
                     {
-                        href: 'https://github.com/0xIntuition',
+                        to: 'https://github.com/0xIntuition',
                         label: 'GitHub',
                         position: 'right',
                     },
