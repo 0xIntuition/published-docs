@@ -120,22 +120,22 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/0xIntuition',
-              },
-              {
-                label: 'Discord',
-                href:
-                  'https://discord.com/channels/909531430881746974/1151564740255043604',
-              },
-            ],
-          },
-        ],
+        // links: [
+        //   {
+        //     title: 'Community',
+        //     items: [
+        //       {
+        //         label: 'GitHub',
+        //         href: 'https://github.com/0xIntuition',
+        //       },
+        //       {
+        //         label: 'Discord',
+        //         href:
+        //           'https://discord.com/channels/909531430881746974/1151564740255043604',
+        //       },
+        //     ],
+        //   },
+        // ],
         copyright: `Copyright ${new Date().getFullYear()} Intuition`,
       },
       //  prism: {
