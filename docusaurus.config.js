@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github"); 
-const darkCodeTheme = require("prism-react-renderer/themes/vsDark"); 
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,7 +17,19 @@ const config = {
   organizationName: "0xintuition", // Usually your GitHub org/user name.
   projectName: "published-docs", // Usually your repo name.
   deploymentBranch: "gh-pages",
-
+  plugins: [
+    [
+      "docusaurus-graphql-plugin",
+      {
+        schema: "http://localhost:8080/v1/graphql",
+        routeBasePath: "/docs/first-api",
+        sidebar: {
+          label: "My Awesome Schema",
+          position: 1,
+        },
+      },
+    ],
+  ],
   presets: [
     [
       "classic",
@@ -42,14 +54,14 @@ const config = {
       }),
     ],
   ],
- /*  stylesheets: [
-        {
-          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-          type: 'text/css',
-          integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-          crossorigin: 'anonymous',
-        },
-      ],*/
+  /*  stylesheets: [
+         {
+           href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+           type: 'text/css',
+           integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+           crossorigin: 'anonymous',
+         },
+       ],*/
   i18n: {
     defaultLocale: "en",
     locales: ["en", "fr"],
@@ -105,22 +117,22 @@ const config = {
           href: 'https://intuition.systems',
         },
         items: [
-                    {
-                        to: 'https://github.com/0xIntuition',
-                        label: 'GitHub',
-                        position: 'right',
-                    },
-                    {
-                        label: 'Discord',
-                        href: 'https://discord.com/channels/909531430881746974/1151564740255043604',
-                        position: 'right',
-                    },
-                ],
-            },
-   //  prism: {
-     //theme: darkCodeTheme,
-     //darkTheme: darkCodeTheme,
-     //},
+          {
+            to: 'https://github.com/0xIntuition',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            label: 'Discord',
+            href: 'https://discord.com/channels/909531430881746974/1151564740255043604',
+            position: 'right',
+          },
+        ],
+      },
+      //  prism: {
+      //theme: darkCodeTheme,
+      //darkTheme: darkCodeTheme,
+      //},
     }),
 };
 
