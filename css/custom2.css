@@ -10,7 +10,7 @@
 }*/
 
 :root {
-  --ifm-color-primary: #006FE8;
+  --ifm-color-primary: #006fe8;
   --ifm-color-primary-dark: #1d68e1;
   --ifm-color-primary-darker: #1b62d4;
   --ifm-color-primary-darkest: #1751af;
@@ -26,10 +26,10 @@
 
   --ifm-code-font-size: 110%;
 
- /* --ifm-font-family-base: "Inter", sans-serif;*/
+  /* --ifm-font-family-base: "Inter", sans-serif;*/
   --ifm-h1-font-size: 1.6rem;
   --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.350rem;
+  --ifm-h3-font-size: 1.35rem;
   --ifm-h4-font-size: 1.2rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
@@ -49,10 +49,11 @@
 
   --ifm-global-shadow-lw: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
   --ifm-global-shadow-md: 0 5px 40px rgba(0, 0, 0, 0.1);
-  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2),
+    0 2px 4px 0 rgba(0, 0, 0, 0.1);
 
   --ifm-global-spacing: 1.75rem;
-  --ifm-navbar-background-color:  none;
+  --ifm-navbar-background-color: none;
   --ifm-menu-color: var(--ifm-color-emphasis-700);
   --ifm-menu-color-active: var(--ifm-color-primary);
 }
@@ -63,7 +64,7 @@ html {
 
 html[data-theme='dark'] {
   --ifm-color-primary: white;
-  --ifm-color-primary-dark: #23B0FF;
+  --ifm-color-primary-dark: #23b0ff;
 
   /* --ifm-color-secondary: black; */
 
@@ -102,7 +103,7 @@ hr {
 }
 
 html[data-theme='dark'] .navbar {
-  background-color:  #111111;
+  background-color: #111111;
   border-bottom: var(--ifm-toc-border-color) 1px solid;
 }
 .container {
@@ -135,7 +136,7 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__link {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--ifm-color-primary);
   font-weight: 400;
 }
@@ -201,9 +202,11 @@ html[data-theme='dark'] .DocSearch {
   --docsearch-searchbox-background: rgba(0, 0, 0, 0.2);
   /* Footer */
   --docsearch-footer-background: var(--ifm-background-surface-color);
-  --docsearch-key-gradient: linear-gradient(-26.5deg,
-      var(--ifm-color-emphasis-200) 0%,
-      var(--ifm-color-emphasis-100) 100%);
+  --docsearch-key-gradient: linear-gradient(
+    -26.5deg,
+    var(--ifm-color-emphasis-200) 0%,
+    var(--ifm-color-emphasis-100) 100%
+  );
 
   --docsearch-searchbox-shadow: inset 0 0 0 2px var(--ifm-color-emphasis-200);
 }
@@ -307,8 +310,25 @@ html[data-theme='dark'] .DocSearch-Hit a {
     padding-top: initial;
   }
 
-
   .footer {
     display: none;
   }
+}
+
+/* Horizontal rule styling */
+hr {
+  background-color: rgba(51, 51, 51, 0.5); /* 50% transparency */
+  height: 1px; /* Lower weight/thickness */
+  margin: 2rem 0;
+}
+
+/* If you need to target specific dividers */
+.theme-doc-markdown hr {
+  background-color: rgba(51, 51, 51, 0.5);
+  height: 1px;
+}
+
+/* For dark mode */
+[data-theme='dark'] hr {
+  background-color: rgba(255, 255, 255, 0.5);
 }
