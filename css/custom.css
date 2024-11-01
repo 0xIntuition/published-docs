@@ -22,10 +22,10 @@ html[data-theme='light'] {
   --ifm-code-font-size: 110%;
   --ifm-menu-color-background-hover: rgba(0, 193, 255, 0.15);
   --ifm-menu-color-background-active: rgba(0, 193, 255, 0.15);
-  --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-font-family-base: 'Inter', sans-serif;
   --ifm-link-decoration: none;
   --ifm-navbar-height: 3.75rem;
-/*  --ifm-font-family-base: "Geist", sans-serif; */
+  /*  --ifm-font-family-base: "Geist", sans-serif; */
   --ifm-font-size-base: 110%;
   --ifm-font-weight-light: 200;
   --ifm-font-weight-normal: 300;
@@ -42,17 +42,22 @@ html[data-theme='light'] {
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #007AFF; /* Updated primary color */
-  --ifm-color-primary-dark: #006AE0;
-  --ifm-color-primary-darker: #005FCC;
-  --ifm-color-primary-darkest: #0054B8;
-  --ifm-color-primary-light: #339CFF;
-  --ifm-color-primary-lighter: #66B5FF;
-  --ifm-color-primary-lightest: #99CEFF;
+  --ifm-color-primary: #007aff; /* Updated primary color */
+  --ifm-color-primary-dark: #006ae0;
+  --ifm-color-primary-darker: #005fcc;
+  --ifm-color-primary-darkest: #0054b8;
+  --ifm-color-primary-light: #339cff;
+  --ifm-color-primary-lighter: #66b5ff;
+  --ifm-color-primary-lightest: #99ceff;
 }
 
 /* Headings should be white */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #ffffff; /* Headings set to white */
   font-weight: 550;
 }
@@ -65,7 +70,10 @@ a {
 
 /* Code blocks */
 code {
-  background-color: var(--ifm-code-background, #1f1f1f); /* Use darker code block background */
+  background-color: var(
+    --ifm-code-background,
+    #1f1f1f
+  ); /* Use darker code block background */
   color: #e5e5e5; /* Light text for code */
 }
 
@@ -82,7 +90,38 @@ button {
 }
 
 button:hover {
-  background-color: var(--ifm-color-primary-light); /* Lighter hover effect for buttons */
+  background-color: var(
+    --ifm-color-primary-light
+  ); /* Lighter hover effect for buttons */
 }
 
+/* Search bar customization */
+.navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 6px;
+  color: var(--ifm-color-white);
+}
 
+/* Placeholder text color */
+.navbar__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus state */
+.navbar__search-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+/* Search keyboard shortcut display */
+.navbar__search-input::-webkit-input-placeholder::after {
+  content: 'CTRL K';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  opacity: 0.7;
+}
