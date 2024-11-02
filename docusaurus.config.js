@@ -1,12 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'docu-notion-sample-site',
+  title: 'Intuition Docs',
   tagline: '',
   url: 'https://0xintuition.github.io',
   baseUrl: '/published-docs/',
@@ -30,7 +27,7 @@ const config = {
         blog: false,
         theme: {
           customCss: [
-            require.resolve('./css/custom2.css'),
+            require.resolve('./css/custom.css'),
             require.resolve('./css/docu-notion-styles.css'),
             require.resolve('./css/colors.css'),
             require.resolve(
@@ -120,28 +117,8 @@ const config = {
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/0xIntuition',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href:
-        //           'https://discord.com/channels/909531430881746974/1151564740255043604',
-        //       },
-        //     ],
-        //   },
-        // ],
         copyright: `Copyright ${new Date().getFullYear()} Intuition`,
       },
-      //  prism: {
-      //theme: darkCodeTheme,
-      //darkTheme: darkCodeTheme,
-      //},
     }),
 };
 

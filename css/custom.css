@@ -6,17 +6,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Updated radial gradient background for subtle visibility in dark mode */
-html[data-theme='dark'] {
-  background: radial-gradient(50% 50% at 50% 50%, #000000 0%, #575757 100%);
-}
-
-/* Force dark mode and apply font */
-html[data-theme='light'] {
-  background: radial-gradient(50% 50% at 50% 50%, #000000 0%, #575757 100%);
-  font-family: 'Geist', sans-serif; /* Apply Geist font */
-}
-
 /* Custom styling */
 :root {
   --ifm-code-font-size: 110%;
@@ -77,11 +66,6 @@ code {
   color: #e5e5e5; /* Light text for code */
 }
 
-.footer--dark {
-  border-top: 1px solid #333333;
-  --ifm-footer-background-color: #000000;
-}
-
 /* Buttons */
 button {
   background-color: var(--ifm-color-primary-dark);
@@ -95,11 +79,9 @@ button:hover {
   ); /* Lighter hover effect for buttons */
 }
 
-/* Search bar customization */
 .navbar__search-input {
   background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-  border-radius: 6px;
   color: var(--ifm-color-white);
 }
 
@@ -124,4 +106,36 @@ button:hover {
   transform: translateY(-50%);
   font-size: 12px;
   opacity: 0.7;
+}
+
+/* Footer padding adjustments */
+.footer {
+  --ifm-footer-padding-vertical: 0.5rem; /* Adjust vertical padding */
+  --ifm-footer-padding-horizontal: 1rem; /* Adjust horizontal padding */
+  padding: var(--ifm-footer-padding-vertical)
+    var(--ifm-footer-padding-horizontal);
+}
+
+/* If you need to target specific footer sections */
+.footer__links {
+  padding: 1rem 0; /* Adjust padding between links section */
+}
+
+.footer__bottom {
+  padding: 1rem 0; /* Adjust padding for bottom section */
+}
+
+/* For more specific control */
+.footer__col {
+  padding: 0 1rem; /* Adjust column padding */
+}
+
+.footer--dark {
+  --ifm-footer-background-color: var(--ifm-footer-bg-color);
+  /* background-color: var(--ifm-footer-background-color); */
+  background-color: #111111;
+  --ifm-footer-padding-vertical: 0.5rem; /* Adjust vertical padding */
+  --ifm-footer-padding-horizontal: 1rem; /* Adjust horizontal padding */
+  padding: var(--ifm-footer-padding-vertical)
+    var(--ifm-footer-padding-horizontal);
 }
