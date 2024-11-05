@@ -23,6 +23,14 @@ const config = {
         },
         blog: false,
         pages: false,
+        customCss: [
+            require.resolve("./css/custom2.css")
+            require.resolve("./css/docu-notion-styles.css"),
+            require.resolve("./css/gifplayer.css"
+             //"./node_modules/react-gif-player/dist/gifplayer.css" // this gave a big red compile warning which is seaming unrelated "  Replace Autoprefixer browsers option to Browserslist config..."
+            ),
+          ],
+        },
       },
     ],
   ],
