@@ -1,4 +1,5 @@
 /** @type {import('@docusaurus/types').Config} */
+
 const config = {
   title: 'Intuition Docs',
   tagline: '',
@@ -14,7 +15,8 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      // '@docusaurus/preset-classic',
+      'classic',
       {
         docs: {
           routeBasePath: '/',
@@ -23,17 +25,17 @@ const config = {
         },
         blog: false,
         pages: false,
+        theme: {
+          customCss: [
+            require.resolve('./css/custom.css'),
+            require.resolve('./css/docu-notion-styles.css'),
+            require.resolve('./css/colors.css'),
+            require.resolve('./css/gifplayer.css'),
+          ],
+        },
       },
     ],
   ],
-  /*  stylesheets: [
-        {
-          href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-          type: 'text/css',
-          integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-          crossorigin: 'anonymous',
-        },
-      ],*/
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],

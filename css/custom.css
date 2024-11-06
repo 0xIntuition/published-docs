@@ -3,15 +3,15 @@
   src: url('Geist-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Custom styling */
 :root {
   --ifm-code-font-size: 110%;
   --ifm-menu-color-background-hover: rgba(0, 193, 255, 0.15);
   --ifm-menu-color-background-active: rgba(0, 193, 255, 0.15);
-  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-base: 'Geist', sans-serif;
   --ifm-link-decoration: none;
   --ifm-navbar-height: 3.75rem;
   /*  --ifm-font-family-base: "Geist", sans-serif; */
@@ -19,7 +19,7 @@
   --ifm-font-weight-light: 200;
   --ifm-font-weight-normal: 300;
   --ifm-font-weight-semibold: 400;
-  --ifm-font-weight-bold: 500;
+  --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
 }
@@ -30,7 +30,9 @@
   border-bottom: 1px solid #333333; /* Add a bottom border */
 }
 
-[data-theme='dark'] {
+html[data-theme='dark'] {
+  --ifm-background-color: #0c0c0c; /* Add this line for the main background */
+  --ifm-background-surface-color: #000000; /* Add this line for surface elements */
   --ifm-color-primary: #007aff; /* Updated primary color */
   --ifm-color-primary-dark: #006ae0;
   --ifm-color-primary-darker: #005fcc;
@@ -47,8 +49,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ffffff; /* Headings set to white */
-  font-weight: 550;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 /* Links without arrows in navbar and footer */
@@ -138,4 +140,28 @@ button:hover {
   --ifm-footer-padding-horizontal: 1rem; /* Adjust horizontal padding */
   padding: var(--ifm-footer-padding-vertical)
     var(--ifm-footer-padding-horizontal);
+}
+
+.markdown a {
+  color: #3578e5;
+}
+
+p {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.5rem; /* Adjust this value to increase/decrease spacing */
+}
+
+/* Remove margin from last item to avoid extra space at bottom of lists */
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0;
+}
+blockquote p {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75); /* for dark mode */
 }
