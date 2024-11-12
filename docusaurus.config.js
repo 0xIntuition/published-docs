@@ -3,7 +3,7 @@
 const config = {
   title: 'Intuition Docs',
   tagline: '',
-  url: 'https://0xintuition.github.io',
+  url: 'https://tech.docs.intuition.systems',
   baseUrl: '/published-docs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
