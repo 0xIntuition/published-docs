@@ -4,7 +4,7 @@ const config = {
   title: 'Intuition Docs',
   tagline: '',
   url: 'https://tech.docs.intuition.systems',
-  baseUrl: '/published-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/intuition-logo-white.ico',
