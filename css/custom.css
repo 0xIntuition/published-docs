@@ -31,7 +31,7 @@
 }
 
 html[data-theme='dark'] {
-  --ifm-background-color: #0c0c0c; /* Add this line for the main background */
+  --ifm-background-color: #080808; /* Add this line for the main background */
   --ifm-background-surface-color: #000000; /* Add this line for surface elements */
   --ifm-color-primary: #007aff; /* Updated primary color */
   --ifm-color-primary-dark: #006ae0;
@@ -148,7 +148,7 @@ button:hover {
 
 p {
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 ul li,
