@@ -22,9 +22,9 @@
      --ifm-color-gray-200:                                             #ebedf0;
      --ifm-color-gray-300:                                             #dadde1;
      --ifm-color-gray-400:                                             #ccd0d5;
-     --ifm-color-gray-500:                                             #bec3c9;
-     --ifm-color-gray-600:                                             #8d949e;
-     --ifm-color-gray-700:                                             #001025;
+     --ifm-color-gray-500:                                             #D3D3D3;
+     --ifm-color-gray-600:                                             #A6A6A6;
+     --ifm-color-gray-700:                                             #878787;
      --ifm-color-gray-800:                                             #131313;
      --ifm-color-gray-900:                                             #030012;
      --ifm-color-gray-1000:                               var(--ifm-color-black);
@@ -137,13 +137,13 @@ blockquote {
 /* Navbar bottom border */
 .navbar {
   background-color: #000000; /* Slightly lighter than the background */
-  border-bottom: 1px solid #333333; /* Add a bottom border */
+  border-bottom: 1px solid #6C6C6C; /* Add a bottom border */
 }
 
 html[data-theme='dark'] {
   --ifm-background-color: #080808; /* Add this line for the main background */
   --ifm-background-surface-color: #000000; /* Add this line for surface elements */
-  --ifm-color-primary: #007aff; /* Updated primary color */
+  --ifm-color-primary: var(ifm-color-white); /* Updated primary color */
   --ifm-color-primary-dark: #006ae0;
   --ifm-color-primary-darker: #005fcc;
   --ifm-color-primary-darkest: #0054b8;
