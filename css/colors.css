@@ -21,7 +21,7 @@
   --ifm-font-weight-bold: 600;
   --ifm-font-weight-base: var(--ifm-font-weight-normal);
   --ifm-line-height-base: 1.65;
-  --ifm-code-font-size: 110%;
+  --ifm-code-font-size: 100%;
   --ifm-code-padding-horizontal: 0.4rem;
   --ifm-code-padding-vertical: 0.2rem;
   --ifm-heading-font-family: inherit;
