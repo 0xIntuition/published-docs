@@ -98,6 +98,8 @@ kbd {
 
 img {
   border-radius: var(--ifm-global-radius);
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .pagination-nav__link {
@@ -327,4 +329,14 @@ ol li:last-child {
 .col--3 {
   padding-left: 0;
   padding-right: 0;
+}
+
+blockquote {
+  background-color: rgba(0, 106, 224, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left: 2px solid var(--ifm-color-primary-dark);
+}
+blockquote > p {
+  color: var(--ifm-color-white);
 }
