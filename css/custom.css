@@ -83,10 +83,10 @@
   --ifm-toc-link-color: var(--ifm-color-primary);
   --ifm-alert-border-left-width: 1px;
   --ifm-alert-border-width: 1px;
-
   --ifm-breadcrumb-color-active: rgba(255, 255, 255, 0.7);
 
   --ifm-pre-padding: 10px;
+  --ifm-hr-background-color: rgba(255, 255, 255, 0.15);
 }
 
 kbd {
@@ -113,34 +113,6 @@ img {
   --ifm-alert-background-color: var(--ifm-color-primary-darkest);
   --ifm-alert-foreground-color: var(--ifm-color-primary-light);
   --ifm-alert-border-color: var(--ifm-color-primary-darker);
-}
-&.alert--success {
-  /* Tip Admonition */
-  --ifm-alert-background-color-highlight: transparent;
-  --ifm-alert-background-color: transparent;
-  --ifm-alert-foreground-color: transparent;
-  --ifm-alert-border-color: var(--ifm-color-emphasis-300);
-}
-&.alert--info {
-  /* Info Admonition */
-  --ifm-alert-background-color-highlight: transparent;
-  --ifm-alert-background-color: transparent;
-  --ifm-alert-foreground-color: transparent;
-  --ifm-alert-border-color: var(--ifm-color-emphasis-300);
-}
-&.alert--warning {
-  /* Warning Admonition */
-  --ifm-alert-background-color-highlight: transparent;
-  --ifm-alert-background-color: transparent;
-  --ifm-alert-foreground-color: transparent;
-  --ifm-alert-border-color: var(--ifm-color-emphasis-300);
-}
-&.alert--danger {
-  /* Danger Admonition */
-  --ifm-alert-background-color-highlight: transparent;
-  --ifm-alert-background-color: transparent;
-  --ifm-alert-foreground-color: transparent;
-  --ifm-alert-border-color: var(--ifm-color-emphasis-300);
 }
 
 /* Blockquotes */
@@ -191,10 +163,23 @@ h6 {
   margin: var(--ifm-heading-margin-top) 15px var(--ifm-heading-margin-bottom) 0;
 }
 
-@for $size from 1 to 6 {
-  h$(size) {
-    font-size: var(--ifm-h$(size)-font-size);
-  }
+h1 {
+  font-size: var(--ifm-h1-font-size);
+}
+h2 {
+  font-size: var(--ifm-h2-font-size);
+}
+h3 {
+  font-size: var(--ifm-h3-font-size);
+}
+h4 {
+  font-size: var(--ifm-h4-font-size);
+}
+h5 {
+  font-size: var(--ifm-h5-font-size);
+}
+h6 {
+  font-size: var(--ifm-h6-font-size);
 }
 
 article {
@@ -207,6 +192,10 @@ article {
 a {
   color: var(--ifm-color-primary); /* Accent color */
   text-decoration: none;
+}
+strong {
+  font-weight: 800;
+  color: rgba(255, 255, 255);
 }
 
 /* Code blocks */
@@ -301,7 +290,7 @@ p,
 li {
   line-height: 1.5rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 ul li,
@@ -333,4 +322,9 @@ ol li:last-child {
 
 .menu__link--sublist-caret:after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
+}
+
+.col--3 {
+  padding-left: 0;
+  padding-right: 0;
 }
