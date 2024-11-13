@@ -26,13 +26,13 @@
   --ifm-code-padding-vertical: 0.2rem;
   --ifm-heading-font-family: inherit;
   --ifm-heading-font-weight: var(--ifm-font-weight-bold);
-  --ifm-heading-line-height: 1.25;
+  /* --ifm-heading-line-height: 1.25;
   --ifm-h1-font-size: 1.5rem;
   --ifm-h2-font-size: 1.25rem;
   --ifm-h3-font-size: 1rem;
   --ifm-h4-font-size: 0.875rem;
   --ifm-h5-font-size: 0.875rem;
-  --ifm-h6-font-size: 0.85rem;
+  --ifm-h6-font-size: 0.85rem; */
 }
 /*  --ifm-image-alignment-padding: 1.25rem;
   --ifm-leading-desktop: 1.25;
