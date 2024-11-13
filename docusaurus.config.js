@@ -114,7 +114,11 @@ const config = {
             items: [
               {
                 label: 'Whitepaper',
-                href: 'https://intuition.systems/whitepaper', //TODO
+                href: 'https://github.com/0xIntuition/intuition-whitepaper/blob/main/intuition_whitepaper.pdf',
+              },
+              {
+                label: 'Litepaper',
+                href: 'https://github.com/0xIntuition/intuition-whitepaper/blob/main/intuition_litepaper.pdf',
               },
             ],
           },
@@ -132,6 +136,18 @@ const config = {
               {
                 label: 'intuition-rs',
                 href: 'https://github.com/0xIntuition/intuition-rs',
+              },
+              {
+                label: 'intuition-chrome-extension',
+                href: 'https://github.com/0xIntuition/intuition-chrome-extension',
+              },
+              {
+                label: 'intuition-snap',
+                href: 'https://github.com/0xIntuition/intuition-snap',
+              },
+              {
+                label: 'intuition-frame',
+                href: 'https://github.com/0xIntuition/intuition-frame',
               },
             ],
           },
@@ -164,16 +180,32 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.gg/0xintuition',
-              },
-              {
                 label: 'X',
                 href: 'https://x.com/0xintuition',
               },
               {
+                label: 'Discord',
+                href: 'https://discord.gg/0xintuition',
+              },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/intuitionsystems',
+              },
+              {
+                label: 'Warpcast',
+                href: 'https://warpcast.com/0xintuition',
+              },
+              {
                 label: 'Medium',
                 href: 'https://medium.com/0xintuition',
+              },
+              {
+                label: 'Galxe',
+                href: 'https://app.galxe.com/quest/intuition',
+              },
+              {
+                label: 'Mirror',
+                href: 'https://mirror.xyz/0x0bcAFff6B45769B53DE34169f08AB220d2b9F910',
               },
             ],
           },
