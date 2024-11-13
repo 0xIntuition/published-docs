@@ -101,6 +101,10 @@ img {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.navbar__logo > img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .pagination-nav__link {
   border: 1px solid rgba(255, 255, 255, 0.15);
