@@ -8,8 +8,7 @@
 
 /* Custom styling */
 :root {
-  --ifm-menu-color-background-hover: rgba(155, 155, 155, 0.15);
-  --ifm-menu-color-background-active: rgba(255, 255, 255, 0.15);
+  --ifm-menu-color: rgba(255, 255, 255, 0.6);
   --ifm-font-family-base: 'Geist', sans-serif;
   --ifm-link-decoration: none;
   --ifm-navbar-height: 3.75rem;
@@ -81,12 +80,23 @@
   --ifm-spacing-vertical: var(--ifm-global-spacing);
   --ifm-spacing-horizontal: var(--ifm-global-spacing);
   --ifm-toc-link-color: var(--ifm-color-primary);
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.15);
   --ifm-alert-border-left-width: 1px;
   --ifm-alert-border-width: 1px;
   --ifm-breadcrumb-color-active: rgba(255, 255, 255, 0.7);
 
   --ifm-pre-padding: 10px;
   --ifm-hr-background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu__link--active {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.menu__link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
 }
 
 kbd {
@@ -117,8 +127,7 @@ img {
 .alert--secondary {
   /* Note Admonition */
   --ifm-alert-background-color: var(--ifm-color-primary-darkest);
-  --ifm-alert-foreground-color: var(--ifm-color-primary-light);
-  --ifm-alert-border-color: var(--ifm-color-primary-darker);
+  --ifm-alert-border-color: var(--ifm-color-primary-dark);
 }
 
 /* Blockquotes */
@@ -144,7 +153,7 @@ blockquote {
 }
 
 html[data-theme='dark'] {
-  --ifm-background-color: #080808; /* Add this line for the main background */
+  --ifm-background-color: rgba(12, 12, 12, 1);
   --ifm-background-surface-color: #000000; /* Add this line for surface elements */
   --ifm-color-primary: #007aff; /* Updated primary color */
   --ifm-color-primary-dark: #006ae0;
@@ -222,7 +231,9 @@ button:hover {
 }
 
 .navbar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(12, 12, 12, 0.7);
+  backdrop-filter: blur(20px);
 }
 
 .navbar__search-input {
@@ -326,6 +337,10 @@ ol li:last-child {
   height: 100%;
 }
 
+.menu__link--sublist {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
 .menu__link--sublist-caret:after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 1.5rem;
 }
