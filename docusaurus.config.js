@@ -7,7 +7,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/intuition-logo-white.ico',
+  favicon: 'img/favicon.ico',
 
   organizationName: '0xintuition', // Usually your GitHub org/user name.
   projectName: 'published-docs', // Usually your repo name.
@@ -73,8 +73,7 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content:
-            'knowledge graph, trust, documentation, Web3 security, developer docs',
+          content: 'knowledge graph, trust, documentation, Web3 security, developer docs',
         },
       ],
       sitemap: {
@@ -94,21 +93,93 @@ const config = {
         items: [
           {
             to: 'https://github.com/0xIntuition',
-            label: 'GitHub',
+            className: 'navbar--github-link',
+            'aria-label': 'GitHub',
             position: 'right',
           },
           {
             to: 'https://discord.gg/0xintuition',
-            label: 'Discord',
+            className: 'navbar--discord-link',
+            'aria-label': 'Discord',
             position: 'right',
           },
         ],
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright ${new Date().getFullYear()} Intuition`,
+        copyright: `Copyright © ${new Date().getFullYear()} Intuition`,
+        links: [
+          {
+            title: 'Developer',
+            items: [
+              {
+                label: 'Whitepaper',
+                href: 'https://intuition.systems/whitepaper', //TODO
+              },
+            ],
+          },
+          {
+            title: 'Github',
+            items: [
+              {
+                label: 'intuition-contracts',
+                href: 'https://github.com/0xIntuition/intuition-contracts',
+              },
+              {
+                label: 'intuition-ts',
+                href: 'https://github.com/0xIntuition/intuition-ts',
+              },
+              {
+                label: 'intuition-rs',
+                href: 'https://github.com/0xIntuition/intuition-rs',
+              },
+            ],
+          },
+          {
+            title: 'Ecosystem',
+            items: [
+              {
+                label: 'Homepage',
+                href: 'https://intuition.systems',
+              },
+              {
+                label: 'Explorer',
+                href: 'https://beta.portal.intuition.systems',
+              },
+              {
+                label: 'Data Populator',
+                href: 'https://data-populator.onrender.com/',
+              },
+              {
+                label: 'Chrome Extension',
+                href: 'https://github.com/0xIntuition/intuition-chrome-extension',
+              },
+              {
+                label: 'Genesis NFT',
+                href: 'https://github.com/0xIntuition/genesis-nft',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/0xintuition',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/0xintuition',
+              },
+              {
+                label: 'Medium',
+                href: 'https://medium.com/0xintuition',
+              },
+            ],
+          },
+        ],
       },
     }),
-};
+}
 
-module.exports = config;
+module.exports = config
