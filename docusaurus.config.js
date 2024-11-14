@@ -172,7 +172,7 @@ const config = {
               },
               {
                 label: 'Genesis NFT',
-                href: 'https://github.com/0xIntuition/genesis-nft',
+                href: 'https://intuition.church',
               },
             ],
           },

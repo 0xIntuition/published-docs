@@ -50,7 +50,8 @@
   --ifm-code-padding-vertical: 0.1rem;
 
   --ifm-heading-color: inherit;
-  --ifm-heading-margin-top: 0;
+  --ifm-heading-margin-top: 2rem;
+  --ifm-heading-margin-bottom: 1rem;
   --ifm-heading-font-family: var(--ifm-font-family-base);
   --ifm-heading-font-weight: var(--ifm-font-weight-bold);
   --ifm-heading-line-height: 1.25;
