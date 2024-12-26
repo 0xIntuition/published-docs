@@ -4,7 +4,7 @@ const config = {
   title: 'Intuition Docs',
   tagline: '',
   url: 'https://tech.docs.intuition.systems',
-  baseUrl: '/landing',
+  baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -19,7 +19,7 @@ const config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/landing',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [[require('./src/plugins/remark-apollo-sandbox'), {}]],
         },
