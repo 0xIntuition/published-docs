@@ -19,7 +19,7 @@ const config = {
       'classic',
       {
         docs: {
-          routeBasePath: /',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [[require('./src/plugins/remark-apollo-sandbox'), {}]],
         },
