@@ -27,7 +27,9 @@ jobs:
       - name: Pull from Notion
         env:
           DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
-          DOCU_NOTION_SAMPLE_ROOT_PAGE: ${{ secrets.DOCU_NOTION_SAMPLE_ROOT_PAGE }}
+          DOCU_NOTION_CONCEPT_ROOT_PAGE: ${{ secrets.DOCU_NOTION_CONCEPT_ROOT_PAGE }}
+          DOCU_NOTION_DEV_ROOT_PAGE: ${{ secrets.DOCU_NOTION_DEV_ROOT_PAGE }}
+          DOCU_NOTION_CONTRACTS_ROOT_PAGE: ${{ secrets.DOCU_NOTION_CONTRACTS_ROOT_PAGE }}
         run: yarn pull
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
