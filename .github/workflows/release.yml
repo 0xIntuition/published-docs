@@ -37,9 +37,5 @@ jobs:
           commit_message: Apply changes from docu-notion
       - name: Build github pages branch
         run: yarn build
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
-          publish_dir: ./build
+      
             
