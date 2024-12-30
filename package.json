@@ -4,14 +4,13 @@
   "private": false,
   "scripts": {
     "clear-docs": "rimraf ./docs/",
-    "pull-test-tagged": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
-    "pull:latest": "yarn clear-docs && cross-var npx @sillsdev/docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
-    "//pull": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
-    "pull": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull:concepts": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_CONCEPT_ROOT_PAGE -m ./docs/concepts -i ./static/notion_imgs -p /notion_imgs/",
+    "pull:dev": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_DEV_ROOT_PAGE -m ./docs/dev -i ./static/notion_imgs -p /notion_imgs/",
+    "pull:contracts": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_CONTRACTS_ROOT_PAGE -m ./docs/contracts -i ./static/notion_imgs -p /notion_imgs/",
+    "pull": "yarn clear-docs && yarn pull:concepts && yarn pull:dev && yarn pull:contracts",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "deploy": "docusaurus deploy",
-    "//serve": "Needed, for example, to test the search functionality locally",
     "serve": "docusaurus serve"
   },
   "dependencies": {
