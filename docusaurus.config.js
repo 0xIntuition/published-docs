@@ -1,5 +1,3 @@
-/** @type {import('@docusaurus/types').Config} */
-
 const config = {
   title: 'Intuition Docs',
   tagline: '',
@@ -11,14 +9,14 @@ const config = {
 
   organizationName: '0xintuition', // Usually your GitHub org/user name.
   projectName: 'published-docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  deploymentBranch: 'main',
 
   presets: [
     [
-      // '@docusaurus/preset-classic',
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'docs/concepts',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [[require('./src/plugins/remark-apollo-sandbox'), {}]],
@@ -33,6 +31,28 @@ const config = {
             require.resolve('./css/gifplayer.css'),
           ],
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dev',
+        path: 'docs/dev',
+        routeBasePath: 'dev',
+        sidebarPath: require.resolve('./sidebars.js'),
+        remarkPlugins: [[require('./src/plugins/remark-apollo-sandbox'), {}]],
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'contracts',
+        path: 'docs/contracts',
+        routeBasePath: 'contracts',
+        sidebarPath: require.resolve('./sidebars.js'),
+        remarkPlugins: [[require('./src/plugins/remark-apollo-sandbox'), {}]],
       },
     ],
   ],
@@ -52,18 +72,15 @@ const config = {
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        // language: ["en", "fr"],
         indexBlog: false,
         indexPages: false,
         docsRouteBasePath: '/',
+        docsDir: 'docs',
       },
     ],
   ],
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
         disableSwitch: true,
@@ -91,6 +108,24 @@ const config = {
           href: 'https://intuition.systems',
         },
         items: [
+          {
+            to: '/',
+            label: 'Concepts',
+            position: 'left',
+            className: 'V3_active',
+          },
+          {
+            to: '/contracts/protocol-overview',
+            label: 'Contracts',
+            position: 'left',
+            className: 'V3_active',
+          },
+          {
+            to: '/dev/overview',
+            label: 'Dev Tools',
+            position: 'left',
+            className: 'V3_active',
+          },
           {
             to: 'https://github.com/0xIntuition',
             className: 'navbar--github-link',
