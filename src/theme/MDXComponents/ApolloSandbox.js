@@ -18,34 +18,59 @@ function SandboxContent() {
 
       try {
         if (window.EmbeddedSandbox) {
-          console.log('EmbeddedSandbox found');
           new window.EmbeddedSandbox({
             target: '#embedded-sandbox',
-            initialEndpoint: 'https://api.i7n.app/v1/graphql',
+            initialEndpoint: 'https://dev.base.intuition-api.com/v1/graphql',
             initialState: {
               document: `query GetAtoms($limit: Int, $offset: Int, $orderBy: [atoms_order_by!], $where: atoms_bool_exp) {
+                atoms_aggregate(where: $where) {
+                  aggregate {
+                    count
+                  }
+                }
                 atoms(limit: $limit, offset: $offset, order_by: $orderBy, where: $where) {
-                  data
+                  # AtomMetadata fields
                   id
                   image
                   label
                   emoji
                   type
-                  blockNumber
-                  blockTimestamp
-                  transactionHash
-                  creatorId
-                  vaultId
-                  walletId
-                  vault {
-                    positionCount
-                    totalShares
-                    currentSharePrice
-                  }
+                  wallet_id
                   creator {
                     id
                     label
                     image
+                  }
+
+                  # AtomTxn fields
+                  block_number
+                  block_timestamp
+                  transaction_hash
+                  creator_id
+
+                  # AtomVaultDetails fields
+                  vault_id
+                  wallet_id
+                  vault {
+                    position_count
+                    total_shares
+                    current_share_price
+                    positions_aggregate {
+                      aggregate {
+                        count
+                        sum {
+                          shares
+                        }
+                      }
+                    }
+                    positions {
+                      id
+                      account {
+                        label
+                        id
+                      }
+                      shares
+                    }
                   }
                 }
               }`,
