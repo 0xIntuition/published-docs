@@ -9,7 +9,7 @@ const config = {
 
   organizationName: '0xintuition', // Usually your GitHub org/user name.
   projectName: 'published-docs', // Usually your repo name.
-  deploymentBranch: 'main',
+  deploymentBranch: 'gh_pages',
 
   presets: [
     [
