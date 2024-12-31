@@ -30,7 +30,14 @@ jobs:
           DOCU_NOTION_CONCEPT_ROOT_PAGE: ${{ secrets.DOCU_NOTION_CONCEPT_ROOT_PAGE }}
           DOCU_NOTION_DEV_ROOT_PAGE: ${{ secrets.DOCU_NOTION_DEV_ROOT_PAGE }}
           DOCU_NOTION_CONTRACTS_ROOT_PAGE: ${{ secrets.DOCU_NOTION_CONTRACTS_ROOT_PAGE }}
-        run: yarn pull
+        run: |
+          # Ensure docs directory structure exists
+          mkdir -p docs/concepts docs/dev docs/contracts
+          # Pull content from Notion
+          yarn pull
+          # Verify the structure
+          echo "Checking docs structure..."
+          ls -R docs/
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
