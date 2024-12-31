@@ -1,0 +1,22 @@
+{
+  "sections": [
+    {
+      "rootPage": "DOCU_NOTION_CONCEPT_ROOT_PAGE",
+      "targetDirectory": "docs/concepts",
+      "title": "Concepts"
+    },
+    {
+      "rootPage": "DOCU_NOTION_DEV_ROOT_PAGE",
+      "targetDirectory": "docs/dev",
+      "title": "Dev Tools"
+    },
+    {
+      "rootPage": "DOCU_NOTION_CONTRACTS_ROOT_PAGE",
+      "targetDirectory": "docs/contracts",
+      "title": "Contracts"
+    }
+  ],
+  "cleanUrls": true,
+  "downloadImages": true,
+  "customTransformers": []
+} 
