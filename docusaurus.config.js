@@ -109,22 +109,24 @@ const config = {
         },
         items: [
           {
-            to: '/',
+            type: 'doc',
+            docId: 'Introduction',
+            position: 'left',
             label: 'Concepts',
-            position: 'left',
-            className: 'V3_active',
           },
           {
-            to: '/contracts/protocol-overview',
+            type: 'doc',
+            docId: 'protocol-overview',
+            docsPluginId: 'contracts',
+            position: 'left',
             label: 'Contracts',
-            position: 'left',
-            className: 'V3_active',
           },
           {
-            to: '/dev/overview',
-            label: 'Dev Tools',
+            type: 'doc',
+            docId: 'overview',
+            docsPluginId: 'dev',
             position: 'left',
-            className: 'V3_active',
+            label: 'Dev Tools',
           },
           {
             to: 'https://github.com/0xIntuition',
