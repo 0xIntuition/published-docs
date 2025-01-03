@@ -1,6 +1,6 @@
 # Intuition Documentation Site
 
-This repository contains the source code for Intuition's technical documentation site, built using [Docusaurus](https://docusaurus.io/) and integrated with Notion for content management.
+This repository contains the source code for Intuition's technical documentation site, built using [Docusaurus](https://docusaurus.io/) and integrated with Notion for content management. For implementation details on the document publishing pipeline, see 'doc-publishing-process.md'.
 
 ## Overview
 
