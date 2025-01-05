@@ -31,6 +31,10 @@ const config = {
             require.resolve('./css/gifplayer.css'),
           ],
         },
+        gtag: {
+          trackingID: 'G-PZPB85CM46',
+          anonymizeIP: false,
+        },
       },
     ],
   ],
