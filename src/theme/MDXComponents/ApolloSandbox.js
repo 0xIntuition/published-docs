@@ -20,7 +20,7 @@ function SandboxContent() {
         if (window.EmbeddedSandbox) {
           new window.EmbeddedSandbox({
             target: '#embedded-sandbox',
-            initialEndpoint: 'https://dev.base.intuition-api.com/v1/graphql',
+            initialEndpoint: 'https://prod.base.intuition-api.com/v1/graphql',
             initialState: {
               document: `query GetAtoms($limit: Int, $offset: Int, $orderBy: [atoms_order_by!], $where: atoms_bool_exp) {
                 atoms_aggregate(where: $where) {
